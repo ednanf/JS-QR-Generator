@@ -144,3 +144,26 @@ footer {
 footer a {
 	color: #8d99ae;
 }
+
+footer a:hover {
+	color: #ef233c;
+}
+
+/* <<<<<<<<<< RESPONSIVE DESIGN >>>>>>>>>>*/
+@media (max-width: 450px) {
+	.container {
+		max-width: 85%;
+	}
+
+	footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		height: 40px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		margin-bottom: 0px;
+	}
+}
