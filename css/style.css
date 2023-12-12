@@ -1,0 +1,146 @@
+/* General */
+* {
+	border: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: #2b2d42;
+}
+
+button {
+	color: #fff;
+	background-color: #d90429;
+	font-size: 1.2rem;
+	padding: 10px 15px;
+	border-radius: 10px;
+	box-shadow: 0 4px #a3031d;
+	cursor: pointer;
+	height: 60px;
+}
+
+button:hover {
+	background-color: #ef233c;
+}
+
+button:active {
+	background-color: #ef233c;
+	box-shadow: 0 5px #ef233c;
+	transform: translateY(2px);
+}
+
+/* Container */
+.container {
+	background-color: #edf2f4;
+	padding: 20px;
+	height: 300px;
+	width: 400px;
+	border-radius: 15px;
+	transition: 0.3;
+}
+
+.container.active {
+	height: 540px;
+}
+
+#qr-header {
+	text-align: center;
+}
+
+#qr-header h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+#qr-header p {
+	font-size: 0.9rem;
+	color: #444;
+}
+
+#qr-form {
+	margin: 20px 15px;
+}
+
+#qr-field-n-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#text-input {
+	height: 50px;
+	width: 100%;
+	font-size: 1.5rem;
+	padding: 10px 15px;
+	border: 1px solid #8d99ae;
+	border-radius: 10px;
+}
+
+#reset-btn {
+	display: none;
+	transition: 0.3s;
+}
+
+.container.active #reset-btn {
+	display: block;
+	width: 80px;
+	margin-left: 5px;
+}
+
+#generate-btn {
+	margin: 20px 0 20px;
+	width: 100%;
+	transition: 0.2s;
+}
+
+.container.active #generate-btn {
+	margin-top: 20px;
+	width: 100%;
+	cursor: not-allowed;
+	color: #edf2f4;
+	background-color: #b4c1d8;
+	box-shadow: 0 4px #8d99ae;
+	transform: translateY(0);
+}
+
+/* QR code */
+#qr-code {
+	display: flex;
+	opacity: 0;
+	border: 1px solid #8d99ae;
+	background-color: #fff;
+	padding: 30px 0;
+	margin: 20px 15px;
+	justify-content: center;
+	border-radius: 5px;
+}
+
+.container.active #qr-code {
+	opacity: 1;
+}
+
+/* Footer */
+footer {
+	margin-top: 20px;
+	color: #8d99ae;
+}
+
+footer a {
+	color: #8d99ae;
+}
