@@ -10,7 +10,7 @@ generateBtn.addEventListener('click', () => {
   generateQR()
 })
 
-generateBtn.addEventListener('keypress', (e) => {
+textInput.addEventListener('keypress', (e) => {
   if (e.key === 'Enter') {
     generateQR()
   }
