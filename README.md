@@ -10,7 +10,7 @@
 
 QR generator using JavaScript and [goQR.me API](https://goqr.me/api/).
 
-Credits
+## Credits
 
 - Icons: [FontAwesome](https://fontawesome.com/)
 - Font: Roboto by Christian Robertson on [Google Fonts](https://fonts.google.com/specimen/Roboto)
